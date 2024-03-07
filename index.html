@@ -71,6 +71,19 @@
 
   gtag('config', 'UA-169281082-1');
 </script>
+<script>
+  document.addEventListener('visibilitychange',
+function(){
+    if(document.visibilityState === "visible"){
+        document.title = "Portfolio | Amaresh";
+        $("#favicon").attr("href","assets\img\Eagle.gif");
+    }
+    else {
+        document.title = "Come Back To Portfolio";
+        
+    }
+});
+</script>
 
 
 </head>
