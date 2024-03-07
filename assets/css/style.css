@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #149ddd;
   color: #fff;
   transition: display 0.5s ease-in-out;
-  z-index: 99999;
+  z-index: 1000;
 }
 
 .back-to-top i {
@@ -1130,3 +1130,23 @@ body {
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
 }
+
+
+/* scroll top starts */
+#scroll-top{
+  position: fixed;
+  top: -140%;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  background: #ffae00;
+  color: rgb(13, 0, 44);
+  border-radius: 50%;
+  transition: 1s linear;
+  z-index: 1000;
+}
+#scroll-top.active{
+  top: calc(100% - 12rem);
+}
+/* scroll top ends */
+
